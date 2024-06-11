@@ -6,9 +6,11 @@ using namespace std;
 
 int minimum(int a, int b);
 int main(){
+    int a=10, b=5;
     int number1 = minimum(10, 5);
-    cout<<number1;
-//    int number2 = minimum(-100);
+    cout<<"The minimum between "<<a<<" and "<<b<<" is "<<number1<<endl;
+    int number2 = minimum(number1, -100);
+    cout<<"The minimum between "<<number1<<" and "<<-100<<" is "<<number2<<endl;
 }
 
 int minimum(int a, int b){
